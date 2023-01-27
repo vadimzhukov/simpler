@@ -5,7 +5,6 @@ class TestsController < Simpler::Controller
     @tests = Test.all
     render 'tests/list'
 
-    set_header 'Content-type', 'text/plain'
     set_header 'Content-type', 'text/html'
   end
 
